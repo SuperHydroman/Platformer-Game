@@ -1,4 +1,17 @@
+-- LÖVE LOAD FUNCTION
 function love.load()
+    anim8 = require 'libraries/anim8/anim8'
+
+    sprites = {}
+    sprites.playerSheet = love.graphics.newImage("assets/sprites/playerSheet.png")
+
+    local grid = anim8.newGrid(614, 564, sprites.playerSheet:getWidth(), sprites.playerSheet:getHeight())
+
+    animations = {}
+    animations.idle = anim8.newAnimation(grid('1-15', 1), 0.05)
+    animations.jump = anim8.newAnimation(grid('1-7', 2), 0.05)
+    animations.run = anim8.newAnimation(grid('1-15', 3), 0.05)
+
     wf = require 'libraries/windfield/windfield/windfield'
     world = wf.newWorld(0, 800, false)
     world:setQueryDebugDrawing(true)
@@ -7,9 +20,7 @@ function love.load()
     world:addCollisionClass("Player")
     world:addCollisionClass("Danger")
 
-    player = world:newRectangleCollider(360, 100, 80, 80, {collision_class = "Player"})
-    player:setFixedRotation(true)
-    player.speed = 250
+    require('src/player')
 
     platform = world:newRectangleCollider(250, 400, 300 , 100, {collision_class = "Platform"})
     platform:setType("static")
@@ -18,34 +29,23 @@ function love.load()
     dangerZone:setType("static")
 end
 
+-- LÖVE UPDATE FUNCTION
 function love.update(dt)
     world:update(dt)
-
-    if player.body then
-        local px, py = player:getPosition()
-        if love.keyboard.isDown("d") then
-            player:setX(px + player.speed * dt)
-        end
-        if love.keyboard.isDown("a") then
-            player:setX(px - player.speed * dt)
-        end
-
-        if player:enter("Danger") then
-            player:destroy()
-        end
-    end
+    updatePlayer(dt)
 end
 
+-- LÖVE DRAW FUNCTION
 function love.draw()
     world:draw()
+    drawPlayer()
 end
 
 function love.keypressed(key)
     if player.body then
         if key == "space" or key == "w" then
-            local colliders = world:queryRectangleArea(player:getX() - 40, player:getY() + 40, 80, 2, {"Platform"})
-            if #colliders > 0 then
-                player:applyLinearImpulse(0, -7000)
+            if player.grounded then
+                player:applyLinearImpulse(0, -4000)
             end
         end
     end

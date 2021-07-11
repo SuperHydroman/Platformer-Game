@@ -3,7 +3,7 @@ function love.conf(t)
     t.version = "11.3"
 --    t.console = true
 --    t.window.fullscreen = true
---    t.window.height = 1080
---    t.window.width = 1920
+    t.window.height = 768
+    t.window.width = 1000
 --    t.window.icon = "assets/sprites/zombie.png"
 end
