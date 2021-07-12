@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82868245-09bc-4d60-b04a-8d7dca2feffd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/player.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/maps/level2.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/maps/mapdesigns/level1.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/maps/mapdesigns/level2.tmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sprites/animations/enemySheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sprites/flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/hump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enemy.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/animations/playerSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/playerSheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.lua" beforeDir="false" afterPath="$PROJECT_DIR$/conf.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/maps/level1.lua" beforeDir="false" afterPath="$PROJECT_DIR$/assets/maps/level1.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/maps/level1.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sprites/playerSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/animations/playerSheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/main.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.lua" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,19 +29,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/player.lua">
+        <entry file="file://$PROJECT_DIR$/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+            <state relative-caret-position="192">
+              <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.lua">
+        <entry file="file://$PROJECT_DIR$/src/enemy.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="360">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -53,7 +61,16 @@
     <findStrings>
       <find>:update</find>
       <find>animations</find>
+      <find>queryrecte</find>
+      <find>query</find>
+      <find>newRectangleCollider</find>
+      <find>newGrid</find>
+      <find>draw()</find>
+      <find>draw</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,9 +79,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main.lua" />
-        <option value="$PROJECT_DIR$/src/player.lua" />
-        <option value="$PROJECT_DIR$/main.lua" />
         <option value="$PROJECT_DIR$/conf.lua" />
+        <option value="$PROJECT_DIR$/src/player.lua" />
+        <option value="$PROJECT_DIR$/src/enemy.lua" />
+        <option value="$PROJECT_DIR$/src/portal.lua" />
+        <option value="$PROJECT_DIR$/main.lua" />
       </list>
     </option>
   </component>
@@ -86,6 +105,35 @@
             <path>
               <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
               <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="sprites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="sprites" type="462c0819:PsiDirectoryNode" />
+              <item name="animations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
@@ -179,7 +227,7 @@
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2822757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2822757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -188,8 +236,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.32998884" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25112614" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25112614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -209,13 +257,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libraries/windfield/windfield/windfield/init.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/windfield/windfield/windfield/mlib/mlib.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -230,10 +271,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.lua">
+    <entry file="file://$PROJECT_DIR$/assets/maps/level1.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="-419">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portal.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -246,8 +294,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/player.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        <state relative-caret-position="1104">
+          <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enemy.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/Simple-Tiled-Implementation/sti/init.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/windfield/windfield/windfield/init.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="861" column="27" lean-forward="true" selection-start-line="861" selection-start-column="27" selection-end-line="861" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/Simple-Tiled-Implementation/main.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/hump/camera.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/anim8/anim8.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4837">
+          <caret line="262" column="3" lean-forward="true" selection-start-line="262" selection-start-column="3" selection-end-line="262" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
         </state>
       </provider>
     </entry>
