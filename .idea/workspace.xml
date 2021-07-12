@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82868245-09bc-4d60-b04a-8d7dca2feffd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/maps/level2.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/maps/mapdesigns/level1.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/maps/mapdesigns/level2.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sprites/animations/enemySheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sprites/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/hump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enemy.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/jump.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/music.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/show.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/maps/level1.lua" beforeDir="false" afterPath="$PROJECT_DIR$/assets/maps/level1.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/maps/level1.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/playerSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/animations/playerSheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/main.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player.lua" beforeDir="false" afterPath="$PROJECT_DIR$/src/player.lua" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+            <state relative-caret-position="336">
+              <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -40,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enemy.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="216">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -67,6 +59,7 @@
       <find>newGrid</find>
       <find>draw()</find>
       <find>draw</find>
+      <find>currentLevel</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -110,6 +103,12 @@
               <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
               <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Platformer Game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Platformer Game" type="b2602c69:ProjectViewProjectNode" />
@@ -227,7 +226,7 @@
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2822757" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2822757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -237,7 +236,7 @@
       <window_info anchor="bottom" id="Thumbnails" weight="0.32998884" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25112614" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25112614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,13 +298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/enemy.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/Simple-Tiled-Implementation/sti/init.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-38315" />
@@ -333,10 +325,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/TESound/tesound.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="46" column="62" lean-forward="true" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enemy.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+        <state relative-caret-position="336">
+          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
         </state>
       </provider>
     </entry>
