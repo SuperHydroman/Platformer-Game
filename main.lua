@@ -18,6 +18,7 @@ function love.load()
     sprites = {}
     sprites.playerSheet = love.graphics.newImage("assets/sprites/animations/playerSheet.png")
     sprites.enemySheet = love.graphics.newImage("assets/sprites/animations/enemySheet.png")
+    sprites.background = love.graphics.newImage("assets/sprites/background.png")
 
     local grid = anim8.newGrid(614, 564, sprites.playerSheet:getWidth(), sprites.playerSheet:getHeight())
     local enemyGrid = anim8.newGrid(100, 79, sprites.enemySheet:getWidth(), sprites.enemySheet:getHeight())
@@ -38,6 +39,9 @@ function love.load()
 
     require('src/player')
     require('src/enemy')
+
+    dangerZone = world:newRectangleCollider(-500, 800, 5000, 50, {collision_class = "Danger"})
+    dangerZone:setType("static")
 
     platforms = {}
 
@@ -73,13 +77,17 @@ function love.update(dt)
             loadMap("level1")
         end
     end
+
+    if player:enter("Danger") then
+        loadMap(saveData.currentLevel)
+    end
 end
 
 -- LÖVE DRAW FUNCTION
 function love.draw()
+    love.graphics.draw(sprites.background, 0, 0)
     cam:attach()
         gameMap:drawLayer(gameMap.layers["Tile Layer 1"])
-        world:draw()
         drawPlayer()
         drawEnemies()
     cam:detach()
